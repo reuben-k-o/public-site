@@ -1,0 +1,171 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Entire card wrapper */
+#card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* card component */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 4rem;
+  color: #ffffff;
+  transition: transform 1s, opacity 1s;
+}
+.card:nth-child(odd) {
+  background-color: #27283c;
+}
+.card:nth-child(even) {
+  color: black;
+  background-color: white;
+}
+.card__intro {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 10px;
+  margin: 10px 5px 10px 30px;
+  text-align: justify;
+}
+.card__intro__author {
+  font-style: italic;
+  text-transform: capitalize;
+}
+.card__content {
+  grid-column: 2 / span end;
+  grid-row: 1/2;
+  padding: 2rem;
+  margin: 10px 30px 10px 5px;
+}
+/* github and live demo buttons */
+.card__intro__links {
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  width: 7rem;
+  padding: 5px 25px;
+  margin: 20px 10px;
+  font-size: 1.02rem;
+  text-align: center;
+  background-color: teal;
+  border: none;
+  border-radius: 10px;
+  font-weight: 650;
+}
+.btn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(0, 128, 128, 0.6);
+  transition: all ease 20ms;
+  border: none;
+}
+
+/* project image  */
+.card__content__img {
+  width: 100%;
+  /* height: 60vh; */
+  transition: all;
+  margin-top: 10px;
+}
+/* alternative links to github source files*/
+/* technologies is the ul list */
+.card__content__src__lnks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.card__content__src__lnks > li {
+  margin: 15px;
+  text-transform: uppercase;
+}
+.card__content__src__lnks > li:hover {
+  color: #00d4d3;
+  cursor: pointer;
+}
+
+/* interchange effect */
+.card__intro-reverse {
+  grid-column: 2 / span end;
+}
+.card__content-reverse {
+  grid-column: 1;
+}
+
+/* reveal effect */
+.card--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/* media queries */
+/* very large screens */
+@media only screen and (max-width: 1100px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    justify-items: center;
+  }
+  .card__intro {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 10px;
+    margin: 10px;
+  }
+  .card__content {
+    grid-column: 2 / span end;
+    grid-row: 1;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+/* medium desktop view */
+@media only screen and (max-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    justify-items: center;
+  }
+  .card__intro {
+    grid-column: 1 / span end;
+    grid-row: 1;
+    padding: 10px;
+    margin: 10px;
+  }
+  .card__content {
+    grid-column: 1 / span end;
+    grid-row: 2;
+    padding: 10px;
+    margin: 10px;
+  }
+  .btn {
+    width: 10rem;
+    height: 2.2rem;
+  }
+}
+
+/* very small view */
+@media only screen and (max-width: 400px) {
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
+}

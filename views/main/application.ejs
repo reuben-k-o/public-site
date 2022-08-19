@@ -1,0 +1,83 @@
+<%- include('../includes/head.ejs')  %> 
+
+    <link rel="stylesheet" href="/css/application.css" />
+  </head>
+  <body>
+    <%- include('../includes/nav.ejs')  %>
+
+    <div
+      class="container d-flex justify-content-center align-content-center p-5"
+    >
+      <div class="card mb-3" style="max-width: 800px">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img
+              src="images/form.jpg"
+              class="img-fluid rounded-start h-100"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-6 form___fields">
+            <div class="card-body">
+              <h5 class="card-title text-center">JOIN US TODAY</h5>
+              <form>
+  <div class="mb-3">
+    <label for="fnames" class="form-label">Full names</label>
+    <input type="text" class="form-control" id="InputFnames" required >
+    
+  </div>
+  <div class="mb-3">
+    <label for="Email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="email" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="quizBox">Level of Proefficiency in Computing</label>
+    <div class="input-group">
+                  <div class="input-group-text">
+                    <input class="mt-0" type="radio" name="level" /><span
+                      class="m-1"
+                      >High</span
+                    >
+                    <input class="mt-0" type="radio" name="level" /><span
+                      class="m-1"
+                      >Average</span
+                    >
+                    <input class="mt-0" type="radio" name="level" /><span
+                      class="m-1"
+                      >Low</span
+                    >
+                  </div>
+  </div>
+  <div class="mb-3 mt-3">
+                <label for="pnumber" class="form-label">Phone number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Upload your CV</label>
+                <input
+                  class="form-control"
+                  type="file"
+                  id="formFile"
+                
+                />
+              </div>
+               <div class="col-auto">
+                <button type="submit" class="btn submit">Submit</button>
+                
+              </div>
+</form>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%- include('../includes/footer.ejs')  %> 
+

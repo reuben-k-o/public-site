@@ -1,0 +1,38 @@
+.form___fields {
+  background-color: #000000;
+  background-image: var(--gradient-primary);
+  border-radius: 0.5%;
+  color: var(--color-tertiary);
+}
+
+.submit {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-tertiary);
+  border-radius: 5%;
+  color: var(--color-secondary);
+}
+
+.submit:hover {
+  background-color: #7cfc00;
+  color: var(--color-primary);
+}
+
+.form-control {
+  border: var(--color-tertiary);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="radio"],
+input[type="submit"],
+input[type="file"],
+.input-group-text {
+  border: 2px solid var(--color-tertiary);
+}
+input[type="radio"]:checked {
+  accent-color: var(--color-tertiary);
+}
+input[type="radio"]:focus {
+  color: var(--color-tertiary);
+}

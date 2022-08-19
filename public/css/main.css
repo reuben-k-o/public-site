@@ -1,0 +1,56 @@
+:root {
+  --color-primary: white;
+  --color-secondary: #000000;
+  --color-tertiary: #2d6502;
+  --color-alternate: #808080;
+  --color-sec: #7cfc00;
+  --color-secondary-2: #377409;
+  --gradient-primary: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__nav {
+    display: flex;
+  }
+
+  #side-menu-toggle {
+    display: none;
+  }
+  .user-message {
+    width: 30rem;
+  }
+}

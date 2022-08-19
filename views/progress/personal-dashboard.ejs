@@ -1,0 +1,246 @@
+<%- include('../includes/head.ejs') %>
+
+    <link rel="stylesheet" href="css/progress.css" />
+    <title>Biodata dashboard</title>
+  </head>
+  <body class="bg-light py-3 ">
+    <%- include('../includes/nav.ejs')  %>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <!-- profile card -->
+          <div class="card">
+            <img
+              src="images/user.jpg"
+              class="card__profileimg rounded"
+              alt="profile picture"
+            />
+            <div class="card-body">
+              <h5 class="card-title user__name">Jennifer Lopez</h5>
+              <p class="card-text">
+                Tech enthusiasist, cracking problems is my specialization 🔓🔓🔓
+              </p>
+            </div>
+            <!-- <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <button
+                  type="button"
+                  class="btn btn-primary mx-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#editDataModal"
+                >
+                  Edit Data
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary mx-2"
+                  id="delete__btn"
+                >
+                  delete
+                </button>
+              </li>
+              <li class="list-group-item user__email">
+                Jenniferlopez@gmail.com
+              </li>
+              <li class="list-group-item">Javascript</li>
+              <li class="list-group-item">12-07-2022</li>
+              <li class="list-group-item">+254711223344</li>
+            </ul> -->
+
+<ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#editDataModal"
+                >
+                  Edit Data
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary mx-2"
+                  id="delete__btn"
+                >
+                  delete
+                </button>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-envelope"></i> jenniferlopez@gmail.com
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-graduation-cap"></i> Javascript
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-calendar-day"></i> 12-07-2022
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-phone"></i> +254711223344
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- course completed card -->
+              <div
+                class="card text-dark bg-warning mb-3"
+                style="max-width: 18rem"
+              >
+                <div class="card-header"><b> Courses Completed </b></div>
+                <div class="card-body">
+                  <p class="card-text">Typescript</p>
+                  <p class="card-text">React Native</p>
+                  <p class="card-text">React</p>
+                </div>
+              </div>
+              <!-- course in pipeline card -->
+
+              <div class="card text-dark bg-info mb-3" style="max-width: 18rem">
+                <div class="card-header"><b> Courses in Pipeline </b></div>
+                <div class="card-body">
+                  <p class="card-text">Database</p>
+                  <p class="card-text">Graphql</p>
+                  <p class="card-text">Nodejs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 skill__content">
+              <h4 class="text-black m-5">Progress</h4>
+
+              <!-- progress chart -->
+              <div class="skill">
+                <div class="outer">
+                  <div class="inner">
+                    <div id="number"></div>
+                  </div>
+                </div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+              </div>
+              <!-- end of progress chart -->
+            </div>
+          </div>
+
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-header"><b>Still Thinking</b></div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                illo sint odit recusandae. Dolor iusto architecto non, aliquid
+                minima in delectus. Dolor quos nobis in eos, architecto odit
+                debitis dignissimos eveniet aliquid sequi optio ducimus
+                similique tempora eius laborum, quam amet pariatur veniam. Nam
+                minima asperiores veniam dolore dicta quam natus facilis totam
+                alias soluta. Quisquam, possimus impedit quis tenetur assumenda
+              </p>
+            </div>
+          </div>
+          <!-- end of card -->
+          <div class="row row-cols-3">
+            <div class="col border border-secondary py-3">
+              <b>Name:</b> Jennifer Lopez
+            </div>
+            <div class="col border border-secondary py-3">
+              <b>Course:</b> Javascript
+            </div>
+            <div class="col border border-secondary py-3">
+              <b>Enrollment Date:</b> 01-05-2022
+            </div>
+          </div>
+          <div class="row row-cols-3 mt-3">
+            <div class="col border border-secondary py-3">
+              <b>University: </b>Moi University
+            </div>
+            <div class="col border border-secondary py-3">
+              <b>Projects: </b>E-commerce
+            </div>
+            <div class="col border border-secondary py-3">
+              <b>Date of Birth: </b> 01-01-2000
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+
+    <div
+      class="modal fade"
+      id="editDataModal"
+      tabindex="-1"
+      aria-labelledby="editDataModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editDataModalLabel">Edit data</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="fullname" class="col-form-label">Full Name:</label>
+                <input type="text" class="form-control" id="fullname" />
+              </div>
+              <div class="mb-3">
+                <label for="course" class="col-form-label">Course:</label>
+                <input type="text" class="form-control" id="course" />
+              </div>
+              <div class="mb-3">
+                <label for="enrollmentdate" class="col-form-label"
+                  >Enrollment Date:</label
+                >
+                <input type="date" class="form-control" id="enrollmentdate" />
+              </div>
+              <div class="mb-3">
+                <label for="project" class="col-form-label">Projects:</label>
+                <input type="text" class="form-control" id="project" />
+              </div>
+              <div class="mb-3">
+                <label for="comments" class="col-form-label">Comments:</label>
+                <textarea class="form-control" id="comments"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal end -->
+
+    <script src="/js/index.js"></script>
+    <script src="/js/admin.js"></script>
+   

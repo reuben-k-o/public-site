@@ -1,0 +1,359 @@
+<%- include('../includes/head.ejs')  %> 
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/about.css" />
+    <script defer type="text/javascript" src="/js/about.js"></script>
+  </head>
+  <body>
+
+    <%- include('../includes/nav.ejs')  %>
+
+    <div class="section--container">
+      <!-- background image section -->
+      <section class="col section--hidden">
+        <img class="about--img" src="/images/img/about-img.jpg" alt="About-image" />
+        <!-- <h2 class="carousel-caption top top-20">ABOUT US</h2> -->
+      </section>
+
+      <!-- intro section -->
+      <section class="col section--hidden">
+        <div class="container my-5">
+          <h2 class="text-center text-capitalize">Introduction section</h2>
+          <div class="row">
+            <div class="col-md-6 text-justify">
+              <h2 class="text-capitalize">Brief History</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                totam numquam odit, quos dolorem cumque perspiciatis delectus
+                alias iusto repellendus neque id cum quam blanditiis nulla
+                aperiam at quaerat maxime.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Recusandae necessitatibus corrupti dicta aliquam vitae? Amet
+                aperiam ipsam ullam cum maiores, eum aliquam iure voluptatum
+                possimus, fugiat, odio eligendi quae corporis! blanditiis nihil
+                asperiores cum quasi id aliquid possimus quos similique magni.
+                Natus officia dolores corrupti harum, doloribus sed sunt
+                dignissimos praesentium asperiores porro nesciunt quasi nemo hic
+                tempore deleniti libero facilis expedita alias, dolore
+                voluptatem molestias voluptates soluta. Aliquid iure molestias
+                eaque nulla magnam quasi tempore ipsa. Debitis tenetur
+                accusantium non.
+              </p>
+            </div>
+            <div class="col-md-6 text-justify founder">
+              <h2>Founder</h2>
+              <img
+                class="founder-dp rounded"
+                src="/images/img/founder-dp.jpg"
+                alt="founder-profile-pic"
+              />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corporis, at fugiat laudantium vel, omnis iste est tempora a
+                deserunt accusantium, nulla ipsam magni animi adipisci
+                reiciendis eius vero cum? Autem. nemo similique reiciendis iusto
+                id voluptatem ea maxime obcaecati illum dolores nulla. Commodi
+                blanditiis nihil asperiores cum quasi id aliquid possimus quos
+                similique magni. Natus officia dolores corrupti harum, doloribus
+                sed sunt dignissimos praesentium asperiores porro nesciunt quasi
+                nemo hic tempore deleniti libero facilis expedita alias, dolore
+                voluptatem molestias voluptates soluta. Aliquid iure molestias
+                eaque nulla magnam quasi tempore ipsa. Debitis tenetur
+                accusantium non.
+              </p>
+              <div class="social-media-handles d-flex justify-content-center">
+                <a style="color: #3b5998" href="#!" role="button"
+                  ><i class="fab fa-facebook-f fa-lg mx-4"></i
+                ></a>
+                <a style="color: #55acee" href="#!" role="button"
+                  ><i class="fab fa-twitter fa-lg mx-4"></i
+                ></a>
+                <a style="color: #dd4b39" href="#!" role="button"
+                  ><i class="fab fa-google fa-lg mx-4"></i
+                ></a>
+                <a style="color: #ac2bac" href="#!" role="button"
+                  ><i class="fab fa-instagram fa-lg mx-4"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- what we offer section -->
+      <section class="col bg-light section--hidden">
+        <div class="container">
+          <div class="row">
+            <h2 class="text-center text-capitalize">What we offer</h2>
+            <div class="col-md-7">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis exercitationem alias quidem dolores minima! Delectus
+                dolor assumenda cum aliquam eum doloremque soluta, qui accusamus
+                et. Tempore possimus cumque totam excepturi incidunt doloremque
+                eaque minima beatae tempora. Assumenda tempore quo fuga, esse
+                incidunt accusantium laborum numquam deleniti maxime, laudantium
+                commodi dolore expedita libero aspernatur, inventore ea quos
+                aperiam qui veritatis explicabo. Beatae repudiandae eius facilis
+                ipsa accusamus voluptates eum vel quaerat cumque sint quas
+                dolor, ratione voluptate. Consequatur, et nobis. Minus
+                consequatur sit voluptatibus mollitia deleniti, facere aliquid
+                libero, fugiat quasi architecto, aliquam animi aperiam molestiae
+                quaerat modi. Dolor, nemo nam.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img
+                class="offer-img"
+                src="/images/img/offer-img.jpg"
+                alt="Team work image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- collapse effect -->
+      <section class="col section--hidden">
+        <div class="col-md-8 container objectives">
+          <div class="objectives__btn d-flex justify-content-center my-4">
+            <button
+              class="link--btns objectives__btn--1 mx-4 objectives__btn-active"
+              data-tab="1"
+            >
+              Mission
+            </button>
+            <button class="link--btns mx-4 objectives__btn--2" data-tab="2">
+              Vission
+            </button>
+            <button class="link--btns objectives__btn--3 mx-4" data-tab="3">
+              Motto
+            </button>
+          </div>
+          <div class="col-md-12 objectives__content">
+            <div class="tab--contents objectives--1">
+              <h2 class="text-center">MISSION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                architecto doloribus earum optio accusantium esse veniam
+                dignissimos voluptates fugit at laudantium inventore
+                exercitationem maiores sit ipsum repudiandae distinctio voluptas
+                laborum dolore sed deserunt illo, molestiae consectetur
+                reprehenderit. Alias distinctio aliquid aut? Nihil libero
+                voluptatum perspiciatis sequi inventore delectus quod doloribus
+                animi reiciendis. Quas sunt sit architecto aspernatur doloribus
+                amet culpa. Voluptatibus dolores, praesentium inventore
+                laboriosam alias enim unde voluptates eos ex iure id illo
+                quisquam tenetur commodi nesciunt! Nihil sapiente commodi facere
+                provident ex fugit vel reiciendis saepe sequi, est qui quam,
+                doloremque pariatur magnam beatae ullam non, incidunt debitis.
+              </p>
+            </div>
+            <div class="tab--contents objectives--2 objectives__hidden">
+              <h2 class="text-center">VISION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                architecto doloribus earum optio accusantium esse veniam
+                dignissimos voluptates fugit at laudantium inventore
+                exercitationem maiores sit ipsum repudiandae distinctio voluptas
+                laborum dolore sed deserunt illo, molestiae consectetur
+                reprehenderit. Alias distinctio aliquid aut? Nihil libero
+                voluptatum perspiciatis sequi inventore delectus quod doloribus
+                animi reiciendis. Quas sunt sit architecto aspernatur doloribus
+                amet culpa. Voluptatibus dolores, praesentium inventore
+                laboriosam alias enim unde voluptates eos ex iure id illo
+                quisquam tenetur commodi nesciunt! Nihil sapiente commodi facere
+                provident ex fugit vel reiciendis saepe sequi, est qui quam,
+                doloremque pariatur magnam beatae ullam non, incidunt debitis.
+              </p>
+            </div>
+            <div class="tab--contents objectives--3 objectives__hidden">
+              <h2 class="text-center">MOTTO</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                architecto doloribus earum optio accusantium esse veniam
+                dignissimos voluptates fugit at laudantium inventore
+                exercitationem maiores sit ipsum repudiandae distinctio voluptas
+                laborum dolore sed deserunt illo, molestiae consectetur
+                reprehenderit. Alias distinctio aliquid aut? Nihil libero
+                voluptatum perspiciatis sequi inventore delectus quod doloribus
+                animi reiciendis. Quas sunt sit architecto aspernatur doloribus
+                amet culpa. Voluptatibus dolores, praesentium inventore
+                laboriosam alias enim unde voluptates eos ex iure id illo
+                quisquam tenetur commodi nesciunt! Nihil sapiente commodi facere
+                provident ex fugit vel reiciendis saepe sequi, est qui quam,
+                doloremque pariatur magnam beatae ullam non, incidunt debitis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faqs accordion section -->
+      <section
+        class="col d-flex justify-content-center bg-light section--hidden"
+      >
+        <div class="col-md-8 my-4">
+          <h2 class="text-center">FREQUENTLY ASKED QUESTIONS</h2>
+          <div class="accordion accordion-flush" id="faqs">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#quiz-1"
+                >
+                  Where are you located?
+                </button>
+              </h2>
+              <div
+                id="quiz-1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqs"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  aut mollitia vel earum placeat facilis iure molestias eligendi
+                  voluptates. Quam omnis soluta esse hic ut eos expedita quas
+                  vitae laborum.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#quiz-2"
+                >
+                  How can I join?
+                </button>
+              </h2>
+              <div
+                id="quiz-2"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqs"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Deserunt consectetur repudiandae dolore vitae eveniet? Natus
+                  sint cupiditate pariatur odio recusandae hic eveniet atque
+                  dolor ab. Sit facilis animi eveniet explicabo!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#quiz-3"
+                >
+                  What are the requirements?
+                </button>
+              </h2>
+              <div
+                id="quiz-3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqs"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  odio iste consectetur quis nam eaque, nisi quibusdam earum
+                  aliquam reprehenderit temporibus maxime, amet numquam sed
+                  debitis beatae facilis ex tempore?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#quiz-4"
+                >
+                  Another question?
+                </button>
+              </h2>
+              <div
+                id="quiz-4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqs"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  odio iste consectetur quis nam eaque, nisi quibusdam earum
+                  aliquam reprehenderit temporibus maxime, amet numquam sed
+                  debitis beatae facilis ex tempore?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#quiz-5"
+                >
+                  Another question ?
+                </button>
+              </h2>
+              <div
+                id="quiz-5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqs"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  odio iste consectetur quis nam eaque, nisi quibusdam earum
+                  aliquam reprehenderit temporibus maxime, amet numquam sed
+                  debitis beatae facilis ex tempore?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#quiz-6"
+                >
+                  Another question?
+                </button>
+              </h2>
+              <div
+                id="quiz-6"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqs"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+                  odio iste consectetur quis nam eaque, nisi quibusdam earum
+                  aliquam reprehenderit temporibus maxime, amet numquam sed
+                  debitis beatae facilis ex tempore?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+  
+ <%- include('../includes/footer.ejs')  %> 

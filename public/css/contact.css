@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
+  place-items: center;
+  grid-auto-rows: minmax(min-content, max-content);
+  color: #2277cb;
+}
+
+.contact--image {
+  width: 100%;
+  height: 50vh;
+  background-image: url("./cropped-1366-768-1218911.jpg");
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  z-index: -1;
+  color: white;
+  font-size: 2rem;
+}
+
+.contact--image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contact--image {
+  grid-row: 1;
+  grid-column: 1 / span end;
+}
+
+.visit-col {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 1rem;
+  margin: 1rem;
+  border-right: 2px solid #ba54f5;
+}
+
+.callUs-col {
+  grid-column: 2;
+  padding: 1rem;
+  margin: 1rem;
+  grid-row: 2;
+  border-right: 2px solid #ba54f5;
+}
+
+.reachUs-col {
+  grid-column: 3;
+  padding: 1rem;
+  grid-row: 2;
+}
+
+.fa-home,
+.fa-phone,
+.fa-envelope {
+  font-size: 4.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+  .contact--image {
+    grid-row: 1;
+    grid-column: 1 / span end;
+  }
+  .col-small-1 {
+    grid-column: 1 / span end;
+    grid-row: 2;
+    border: none;
+    border-bottom: 2px solid #ba54f5;
+    text-align: center;
+  }
+  .col-small-2 {
+    grid-column: 1 / span end;
+    grid-row: 3;
+    border: none;
+    border-bottom: 2px solid #ba54f5;
+    text-align: center;
+  }
+  .col-small-3 {
+    grid-column: 1 / span end;
+    grid-row: 4;
+    border: none;
+    text-align: center;
+  }
+}
+.jumbotron-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+.bi {
+  color: #7cfc00;
+}
+.card-icons__gray {
+  background-color: #181818;
+}
+.btn {
+  background-color: white;
+  border: 2px solid #7cfc00;
+  border-radius: 5%;
+  color: #000;
+}
+.btn:hover {
+  background-color: #7cfc00;
+  color: white;
+}
+
+.home__link {
+  color: #7cfc00;
+  text-decoration: none;
+}
+.home__link:hover {
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+.text__area {
+  border: 2px solid #7cfc00;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20rem);
+}

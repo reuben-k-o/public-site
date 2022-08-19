@@ -1,0 +1,105 @@
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap); */
+
+/* 
+
+#7CFC00 - Lawngreen
+#000000 - Black
+#808080 - Gray
+
+
+*/
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"); */
+
+/* :root {
+  --color-primary-one: #27283c;
+  --color-primary-two: #ffffff;
+
+  --color-secondary: #de4fcd;
+  --color-secondary-two: #2277cb;
+}
+
+body {
+  background-color: var(--color-primary-gradient);
+} */
+
+.card__profileimg {
+  height: 400px;
+  object-fit: cover;
+}
+
+.skill__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill {
+  height: 160px;
+  width: 160px;
+  position: relative;
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  /* border: 1px solid rebeccapurple; */
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid rebeccapurple; */
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number .number {
+  font-weight: 600;
+  color: #555;
+}
+
+circle {
+  fill: none;
+  /* stroke: cornflowerblue; */
+  stroke: #7cfc00;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim 2s linear forwards;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 165;
+  }
+}
+
+/* cards */
+#user--image {
+  height: 230px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* section */
+
+/* admin dashboard*/
+.user__progress {
+  display: grid;
+  grid-template-columns: 15% 80%;
+}
