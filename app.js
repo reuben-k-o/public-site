@@ -1,7 +1,6 @@
 const path = require("path");
 const express = require("express");
 
-const rootDir = require("./util/path");
 const authRoute = require("./routes/auth");
 const progressRoute = require("./routes/progress");
 const adminRoute = require("./routes/admin");
@@ -14,11 +13,11 @@ app.set("views", "views");
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(rootDir, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/admin", adminRoute);
 app.use(progressRoute);
 app.use(mainRoute);
-app.use(adminRoute);
 app.use(authRoute);
 
 app.listen(3500);
