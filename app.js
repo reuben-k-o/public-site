@@ -20,4 +20,4 @@ app.use(progressRoute);
 app.use(mainRoute);
 app.use(authRoute);
 
-app.listen(3500);
+app.listen(process.env.PORT || 3500);
